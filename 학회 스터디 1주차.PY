@@ -24,8 +24,10 @@ else :
 
 #입력 받은 수가 2와 3을 약수로 가지는 지 확인
 A=int(input('please input the number A: '))
-if A%6==0:
+if (A%2==0 and A%3==0):
     print('A는 2와 3을 약수로 가집니다.')
+elif (A%2!=0 or A%3!=0):
+    print('A는 2와 3을 약수로 가지지 않습니다.')
 else :
     print('A는 2와 3을 약수로 가지지 않습니다.')
 
