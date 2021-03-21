@@ -1,4 +1,27 @@
 #프로그램 사용자로부터 임의의 문자열을 입력 받고, 입력 받은 문자열의 길이를 출력하시오. 또한, 입력 받은 문자열 중 영문 소문자의 개수를 세어 출력하시오.
+#1
+str1=input("문자열을 입력해 주세요: ")
+length=len(str1)
+print(length)
+i=0
+count=0
+while i<length:
+    if str1[i].islower()==True:
+        count+=1
+        i+=1
+    print(count)
+
+str1=input("문자열을 입력해 주세요: ")
+length=len(str1)
+print(length)
+i=0
+coun=0
+for i in range(len(str1)):
+    if str[i].islower()==True:
+        count+=1
+        print(count)
+
+
 str1 = input("문자열을 입력해 주세요: ")
 lenght = len(str1)
 print(lenght)
