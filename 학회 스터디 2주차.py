@@ -8,8 +8,8 @@ count=0
 while i<length:
     if str1[i].islower()==True:
         count+=1
-        i+=1
-    print(count)
+    i+=1
+print(count)
 
 str1=input("문자열을 입력해 주세요: ")
 length=len(str1)
@@ -19,19 +19,8 @@ coun=0
 for i in range(len(str1)):
     if str[i].islower()==True:
         count+=1
-        print(count)
-
-
-str1 = input("문자열을 입력해 주세요: ")
-lenght = len(str1)
-print(lenght)
-i = 0
-count = 0
-while i<lenght:
-    if str1[i].islower() == True:
-        count += 1
-    i += 1
 print(count)
+
 
 #프로그램 사용자로부터 3개의 문자열을 입력 받고, 이를 모두 합쳐 하나의 문자열로 출력하는 프로그램을 작성하시오.
 str1, str2, str3 = input("3개의 문자열을 공백을 기준으로 입력하세요: ").split()
