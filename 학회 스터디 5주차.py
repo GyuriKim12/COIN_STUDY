@@ -17,6 +17,19 @@ def print_numbers():
 a,b=map(int,input('Input two numbers: ').split())
 print_numbers()
 
+def my_minus(a,b):
+    print('Minus result is',str(a-b))
+def my_multiply(a,b):
+    print('Multiply result is',str(a*b))
+def my_division(a,b):
+    print('Division result is',str(a/b))
+
+print('Input two numbers: ')
+a=int(input())
+b=int(input())
+my_minus(a, b)
+my_multiply(a, b)
+my_division(a, b)
 # 실습 3) 두 개의 숫자와 +,-,*,/기호 중 하나를 입력 받으면 입력 받은 기호에 따라 앞에서 선언한 
 #my_plus, my_minus등의 함수를 적절히 사용하여 연산을 수행할 수 있도록 돕는 my_calculate함수를 선언하시오.
 def my_calculate():
@@ -36,3 +49,25 @@ def my_calculate():
 a,b=map(int,input('Input two numbers: ').split())
 val=input('Input operation: ')
 my_calculate()
+
+def my_calculate(a,b,val):
+    def my_plus(a,b):
+        print('plus result is',a+b)
+    def my_minus(a,b):
+        print('Minus result is',a-b)
+    def my_multiply():
+        print('Multiply result is',a*b)
+    def my_division():
+        print("Division result is",a/b)
+    if val=='+':
+        my_plus()
+    elif val=='-':
+        my_minus()
+    elif val=='*':
+        my_multiply()
+    else:
+        my_division()
+a,b=map(int,input('Input two numbers: ').split())
+val=input('Input operation: ')
+my_calculate(a,b,val)
+
